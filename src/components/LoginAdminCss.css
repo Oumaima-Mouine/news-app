@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1c4a74, #06b6d4);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%; /* Use percentage for smaller screens */
+    max-width: 600px; /* Limit maximum width for larger screens */
+    margin-top: 150px;
+    background-color: #f2f6fc; 
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.text {
+    color: #1c4a74;
+    font-size: 36px; /* Reduce font size for smaller screens */
+    font-weight: 700;
+    text-align: center;
+}
+
+.underLine {
+    width: 50px; /* Reduce underline width */
+    height: 4px;
+    background-color: #06b6d4;
+    border-radius: 9px;
+}
+
+.inputs {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90%; /* Use percentage to make it responsive */
+    max-width: 480px;
+    height: 60px; /* Reduce height for better scaling */
+    background-color: #eaf2f8; /* Soft, light blue */
+    border-radius: 6px;
+    padding: 0 15px; /* Add padding for spacing inside the input box */
+}
+
+.input img {
+    margin-right: 15px; /* Adjust spacing for smaller screens */
+    width: 24px; /* Scale icon size */
+    height: 24px;
+}
+
+.input input {
+    flex: 1; /* Make input take remaining space */
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 16px;
+}
+.forget_password {
+    padding-left: 20px;
+    margin-top: 20px;
+    color: #1c4a74; /* Deep blue to match the primary palette */
+    font-size: 14px;
+    text-align: center;
+}
+
+.forget_password span {
+    color: #06b6d4; /* Lighter blue for the link */
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.forget_password span:hover {
+    color: #045a74; /* Darker blue on hover for better visibility */
+    text-decoration: underline; /* Add underline for emphasis */
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center; /* Center align the button */
+    margin: 40px auto;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    background: #06b6d4; /* Vibrant blue */
+    color: #fff;
+    border-radius: 50px;
+    font-size: 16px; /* Adjust font size */
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background: #045a74; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .text {
+        font-size: 28px; /* Reduce font size */
+    }
+
+    .underline {
+        width: 40px;
+        height: 3px;
+    }
+
+    .input {
+        height: 50px;
+    }
+
+    .input img {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .input input {
+        font-size: 14px;
+    }
+
+    .forget_password {
+        font-size: 12px;
+    }
+
+    .submit {
+        width: 150px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Use almost full width for mobile screens */
+        margin-top: 100px;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+
+    .underline {
+        width: 30px;
+        height: 2px;
+    }
+
+    .inputs {
+        gap: 15px; /* Reduce spacing between inputs */
+    }
+
+    .input {
+        height: 45px;
+        padding: 0 10px;
+    }
+
+    .submit {
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
