@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import NewsPage from "./pages/NewsPage";
 import ActivitiesPsage from "./pages/ActivitiesPage";
 import { AdminLoginPage } from "./pages/AdminLoginPage";
+// import NewsPage from "./pages/NewsPage";
 
 
 function App() {
@@ -17,8 +18,10 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/activities" element={<ActivitiesPsage/>}/>
         <Route path="/news" element={<NewsPage/>}/>
-        <Route path="/login" element={<AdminLoginPage/>}/>
+      <Route path="/login" element={<AdminLoginPage/>}/>
+
       </Routes>
+
     </BrowserRouter>
    
   );
