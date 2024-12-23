@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter,Route, Routes } from "react-router-dom";
-
+import "./App.css"; 
 import Header from './layouts/Header';
 import HomePage from './pages/HomePage';
 import NewsPage from "./pages/NewsPage";
 import ActivitiesPsage from "./pages/ActivitiesPage";
 import { AdminLoginPage } from "./pages/AdminLoginPage";
+import { div } from "framer-motion/client";
 // import NewsPage from "./pages/NewsPage";
 
 
@@ -13,12 +14,11 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="/activities" element={<ActivitiesPsage/>}/>
-        <Route path="/news" element={<NewsPage/>}/>
-      <Route path="/login" element={<AdminLoginPage/>}/>
+        <Route path="/" element={<div>      <Header />          <HomePage/></div>}/>
+        <Route path="/activities" element={<div>      <Header />          <ActivitiesPsage/></div>}/>
+        <Route path="/news" element={<div>      <Header />          <NewsPage/></div>}/>
+      <Route path="/login" element={<div className="divv"><AdminLoginPage/></div>}/>
 
       </Routes>
 

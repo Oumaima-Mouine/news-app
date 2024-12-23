@@ -1,6 +1,10 @@
-/* General Styles */
-body {
-    height: 100vh;
+ 
+.bodyy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100%;
     background: linear-gradient(135deg, #1c4a74, #06b6d4);
     margin: 0;
     font-family: Arial, sans-serif;
@@ -10,14 +14,12 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width: 90%; /* Use percentage for smaller screens */
-    max-width: 600px; /* Limit maximum width for larger screens */
-    margin-top: 150px;
+    width: 90%; 
+    max-width: 600px; 
     background-color: #f2f6fc; 
-    padding: 20px; /* Add padding for better spacing */
-    border-radius: 10px; /* Slightly rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .header {
@@ -31,13 +33,13 @@ body {
 
 .text {
     color: #1c4a74;
-    font-size: 36px; /* Reduce font size for smaller screens */
+    font-size: 36px; 
     font-weight: 700;
     text-align: center;
 }
 
 .underLine {
-    width: 50px; /* Reduce underline width */
+    width: 50px; 
     height: 4px;
     background-color: #06b6d4;
     border-radius: 9px;
@@ -54,22 +56,22 @@ body {
     display: flex;
     align-items: center;
     margin: auto;
-    width: 90%; /* Use percentage to make it responsive */
+    width: 90%; 
     max-width: 480px;
-    height: 60px; /* Reduce height for better scaling */
-    background-color: #eaf2f8; /* Soft, light blue */
+    height: 60px; 
+    background-color: #eaf2f8; 
     border-radius: 6px;
-    padding: 0 15px; /* Add padding for spacing inside the input box */
+    padding: 0 15px; 
 }
 
 .input img {
-    margin-right: 15px; /* Adjust spacing for smaller screens */
-    width: 24px; /* Scale icon size */
+    margin-right: 15px; 
+    width: 24px; 
     height: 24px;
 }
 
 .input input {
-    flex: 1; /* Make input take remaining space */
+    flex: 1; 
     height: 100%;
     background: transparent;
     border: none;
@@ -80,26 +82,26 @@ body {
 .forget_password {
     padding-left: 20px;
     margin-top: 20px;
-    color: #1c4a74; /* Deep blue to match the primary palette */
+    color: #1c4a74; 
     font-size: 14px;
     text-align: center;
 }
 
 .forget_password span {
-    color: #06b6d4; /* Lighter blue for the link */
+    color: #06b6d4; 
     cursor: pointer;
     text-decoration: none;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .forget_password span:hover {
-    color: #045a74; /* Darker blue on hover for better visibility */
-    text-decoration: underline; /* Add underline for emphasis */
+    color: #045a74; 
+    text-decoration: underline; 
 }
 
 .submit-container {
     display: flex;
-    justify-content: center; /* Center align the button */
+    justify-content: center; 
     margin: 40px auto;
 }
 
@@ -107,25 +109,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 180px; /* Adjust width */
-    height: 50px; /* Adjust height */
-    background: #06b6d4; /* Vibrant blue */
+    width: 180px; 
+    height: 50px;
+    background: #06b6d4; 
     color: #fff;
     border-radius: 50px;
-    font-size: 16px; /* Adjust font size */
+    font-size: 16px; 
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .submit:hover {
-    background: #045a74; /* Darker blue on hover */
+    background: #045a74;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .text {
-        font-size: 28px; /* Reduce font size */
+        font-size: 28px; 
     }
 
     .underline {
@@ -160,7 +162,7 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        width: 95%; /* Use almost full width for mobile screens */
+        width: 95%; 
         margin-top: 100px;
     }
 
@@ -174,7 +176,7 @@ body {
     }
 
     .inputs {
-        gap: 15px; /* Reduce spacing between inputs */
+        gap: 15px;
     }
 
     .input {

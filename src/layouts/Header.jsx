@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo-news.png";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,6 +30,12 @@ function Header() {
             </Link>
             <Link to="/news" className="text-white hover:text-cyan-200 px-3 py-2 rounded-md text-sm font-medium">
               News
+            </Link>
+            <Link to="/login" className="text-white hover:text-cyan-200 px-3 py-2 rounded-md text-sm font-medium">
+              Log In
+            </Link>
+            <Link to="/signUp" className="text-white hover:text-cyan-200 px-3 py-2 rounded-md text-sm font-medium">
+              Sign Up
             </Link>
           </nav>
 
@@ -106,6 +112,12 @@ function Header() {
             </Link>
             <Link to="/news" className="block text-white hover:bg-cyan-500 px-3 py-2 rounded-md">
               News
+            </Link>
+            <Link to="/login" className="block text-white hover:bg-cyan-500 px-3 py-2 rounded-md">
+              Log In
+            </Link>
+            <Link to="/signUp" className="block text-white hover:bg-cyan-500 px-3 py-2 rounded-md">
+              Sign Up
             </Link>
           </div>
         </div>

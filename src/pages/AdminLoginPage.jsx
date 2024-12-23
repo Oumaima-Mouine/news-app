@@ -2,10 +2,12 @@ import React from 'react';
 import '../components/LoginAdminCss.css';
 import email_icon from '../assets/email.png';
 import password_icon from '../assets/password.png';
+import { div } from 'framer-motion/client';
 
 export  function AdminLoginPage() {
   return (
-    <div className="container">
+    <div className='bodyy'>
+      <div className="container">
       <div className="header">
         <div className="text">Login</div>
         <div className="underLine"></div>
@@ -26,6 +28,7 @@ export  function AdminLoginPage() {
       <div className="submit-container">
         <div className="submit">Login</div>
       </div>
+    </div>
     </div>
   );
 }
